@@ -100,7 +100,7 @@ students_projection <- function(result_student){
     
     if(result_student[i,j] <= 45){
       print("student at risk")
-    }else if (result_student[i,j] > 45 | result_student[i,j] < 61){
+    }else if (result_student[i,j] > 45 && result_student[i,j] < 61){
       print("student may be approved")
     }else if (result_student[i,j] >= 61){
       print("student approved")
